@@ -225,6 +225,8 @@ footer .social img{
 .season-img, .wild-img{
     /*border:2px solid var(--primary-color);*/
     box-shadow: 2px 2px 10px black;
+    margin: 0 0 15px 0;
+    
 }
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
@@ -268,5 +270,9 @@ footer .social img{
     }
     footer {
         margin-top: 25px;
+    }
+    /*Blog Media Queries*/
+    .season-img, .wild-img{
+        width: 100%;
     }
 }
