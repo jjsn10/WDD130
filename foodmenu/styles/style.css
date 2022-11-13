@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@700&family=Ubuntu:wght@300&display=swap');
+:root{
+    --heading-font: "Amaranth",sans-serif;
+    --paragraph-font: "Ubuntu", sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
 header{
     display: grid;
     grid-template-columns: 20% 80%;
@@ -16,10 +25,29 @@ nav{
     grid-row: 1/2;
 }
 nav ul{
-    border: 2px dashed black;
-    background-color: rgb(7, 117, 180);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(6, 54, 156);
+    margin: 0;
+    padding: 0;
+    /*height: 200px;*/
+    
 }
 nav ul li{
-    display: inline-block;
-    padding: 15px 15px;
+    list-style-type: none;
+    font-family: var(--heading-font);
+    /*border: 1px dashed white;*/
+}
+nav ul li a{
+    display: block;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+nav ul li a:hover{
+    background-color: rgb(139, 222, 236);
+    /*border-bottom: 3px solid white;*/
+    padding: 15px 20px;
 }
