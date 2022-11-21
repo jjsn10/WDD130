@@ -7,6 +7,7 @@
     padding: 0;
     margin: 0;
 }
+/* header section*/
 header{
     display: grid;
     grid-template-columns: 20% 80%;
@@ -15,14 +16,28 @@ header{
     grid-column: 1/2;
     grid-row: 1/2;
     z-index:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .logo img{
-    width: 150px;
-    height: 150px;
+    display: block;
+    margin-top: 8px;
+    width: 200px;
+    height: 120px;
 }
 nav{
     grid-column: 1/3;
     grid-row: 1/2;
+}
+#banner{
+    grid-column: 1/3;
+    grid-row: 1/3;
+    z-index: -1;
+}
+#banner img{
+    width: 100%;
+    height: 100%;
 }
 nav ul{
     display: flex;
@@ -51,3 +66,261 @@ nav ul li a:hover{
     /*border-bottom: 3px solid white;*/
     padding: 15px 20px;
 }
+/* end header section*/
+
+/*main section*/
+main{
+    width: 80%;
+    margin: 0 auto;
+    border: 1px dashed black;
+}
+/*end main section*/
+
+/* Too Many Options to Eat*/
+#first{
+    border: 1px dashed red;
+    display: flex;
+    justify-content: space-around;
+}
+.first-detail{
+    width: 60%;
+}
+.first-detail h1{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: var(--heading-font);
+    font-size: 1.8em;
+}
+.first-detail p{
+    line-height: 1.5em;
+    font-family: var(--paragraph-font);
+    font-size: 1.2em;
+    text-align: justify;  
+}
+.image-first{
+    display: block;
+    padding: 25px 0 25px 0;
+}
+/* End Too Many Options to Eat*/
+
+/* All Do you Need to Know*/
+.second{
+    border: 1px dashed rgb(241, 103, 11);
+    display: flex;
+    flex-direction: column;
+}
+.second h1{
+    margin: 25px auto;
+    font-family: var(--heading-font);
+    font-size: 1.8em;
+}
+.options{
+    display:flex;
+    justify-content: space-around;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+.options article{
+    width: 200px;
+}
+.options article h3{
+    font-family: var(--heading-font);
+    margin: 10px 0;
+    text-align: center;
+}
+.options article p{
+    font-family: var(--paragraph-font);
+    text-align: justify;
+    line-height: 25px;
+}
+.options article button{
+    border-radius: 5px;
+    padding: 8px 25px;
+    background-color: #0e3d6b;
+    font-size:1.0em;
+    border: none;
+    color: white;
+    margin-top:10px;
+}
+.options article button:hover{
+    background-color: #265788;
+}
+
+/* End All Do you Need to Know*/
+
+/*Third*/
+.third{
+    display: flex;
+    justify-content: space-around;
+    border: 1px dashed green;
+}
+.image-third{
+    display: block;
+    padding: 25px 0 25px 0;
+}
+.third-detail{
+    width: 60%;
+    
+}
+.third-detail h1{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: var(--heading-font);
+    font-size: 1.8em;
+}
+.third-detail p{
+    line-height: 1.5em;
+    font-family: var(--paragraph-font);
+    font-size: 1.2em;
+    text-align: justify;  
+}
+.third-detail button{
+    border-radius: 0.3em;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    margin-top:25px;
+    background-color: #f98b09;
+    border: none;
+}
+/*End Third */
+
+/* Search Form Trucks Food*/
+form.search-form{
+    margin-top: 25px;
+    text-align: center;
+}
+form.search-form input[type=text]{
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid grey;
+}
+form.search-form button{
+    padding:10px;
+    font-size: 1em;
+    border: 1px solid grey;
+    border-left: none;
+    background-color: #0e3d6b;
+    color: white;
+}
+
+/* End Search Form Trucks Food */
+
+/* list food trucks */
+.list{
+    border: 1px dashed blue;
+}
+.list h1{
+    margin: 50px 0;
+    text-align: center;
+    font-family: var(--heading-font);
+    font-size: 1.8em;
+}
+.list-detailed article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-detailed article img{
+    padding-right: 25px;
+}
+.truck-info h3{
+    font-family: var(--heading-font);
+}
+.truck-info ul li{
+    list-style-type: none;
+    margin: 20px 0;
+    font-family: var(--paragraph-font);
+}
+.truck-status{
+    margin-left: 25px;
+}
+.truck-status ul{
+    margin-top: 40px;
+}
+.truck-status ul li{
+    list-style-type: none;
+    margin-bottom: 18px;
+    font-family: var(--paragraph-font);
+}
+.truck-status li a{
+    text-decoration: none;
+    color: black;
+}
+.truck-status li button{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f98b09;
+}
+
+/* End list food trucks */
+
+/*breadcrumb menu*/
+.breadcrumb{
+    margin: 50px 0;
+    text-align: center;
+}
+.breadcrumb li{
+    display: inline-block;
+    margin: 0 15px;
+}
+.breadcrumb li a{
+    color: black;
+    text-decoration: none;
+    font-family: var(--paragraph-font);
+    font-size: 1.2em;
+}
+/* end breadcrumb menu*/
+
+/*footer*/
+footer{
+    background-color: brown;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 15px 110px;
+}
+.list_menu{
+    /*border: 1px dashed white;*/
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.list_menu ul li{
+    list-style-type: none;
+    margin: 5px 0 5px 0;
+    font-family: var(--heading-font);
+    
+}
+.list_menu ul li a{
+    color:white;
+    text-decoration: none;
+}
+.list_menu ul li a:hover{
+    color:#f98b09;
+}
+
+.bottom_logo{
+    /*border: 1px dashed white;*/
+    width: 200px;
+    height: 120px;
+}
+.media{
+    /*border: 1px dashed white;*/
+    display: flex;
+    align-items: center;
+}
+.media ul li{
+    display: inline;
+    list-style-type: none;
+    margin: 0 10px;
+}
+.media ul li a{
+    color: white;
+}
+/* end footer */
+
+
