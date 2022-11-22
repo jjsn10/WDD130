@@ -215,32 +215,36 @@ form.search-form button{
     font-family: var(--heading-font);
     font-size: 1.8em;
 }
-.list-detailed article{
+.list-detailed article, .food-list-detailed article{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 25px 0;
 }
-.list-detailed article img{
+.list-detailed article img, .food-list-detailed article img{
     padding-right: 25px;
 }
-.truck-info h3{
+.truck-info h3, .food-info h3{
     font-family: var(--heading-font);
+    color: #0e3d6b;
 }
 .truck-info ul li{
     list-style-type: none;
     margin: 20px 0;
+    width: 400px;
     font-family: var(--paragraph-font);
 }
-.truck-status{
+.truck-status, .food-status{
     margin-left: 25px;
 }
-.truck-status ul{
+.truck-status ul, .food-status ul{
     margin-top: 40px;
 }
-.truck-status ul li{
+.truck-status ul li, .food-status ul li{
     list-style-type: none;
     margin-bottom: 18px;
     font-family: var(--paragraph-font);
+    
 }
 .truck-status li a{
     text-decoration: none;
@@ -254,6 +258,19 @@ form.search-form button{
 }
 
 /* End list food trucks */
+
+/* Food List Detailed */
+.food-info ul li{
+    list-style-type: none;
+    margin: 20px 0;
+    width: 400px;
+    font-family: var(--paragraph-font);
+}
+.food-status i{
+    color:#f98b09;
+}
+
+/*End Food List Detailed */
 
 /*breadcrumb menu*/
 .breadcrumb{
