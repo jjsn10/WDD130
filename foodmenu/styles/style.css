@@ -33,21 +33,46 @@ nav{
 #banner{
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    margin-top: -75px;
+    margin-top: -100px;
 }
-#image-banner{
+#banner-box{
     filter:brightness(50%);
-    /*width: 100%;*/
-    /*height: 100%;*/
-    height: 300px;
-    grid-column: 1/3;
+    grid-column: 1/4;
     grid-row: 1/3;
     z-index: -2;
+}
+.banner-img{
+    width: 100%;
+    height: 100%;
 }
 #banner-msg{
     grid-column: 2/3;
     grid-row: 1/2;
-    margin-top: 100px
+    margin-top: 150px
+}
+#banner-msg h1{
+    text-align: center;
+    font-size: 2.8em;
+    color: white;
+    font-family: var(--heading-font);
+    text-shadow: 2px 2px 3px black;
+}
+.button-banner{
+    text-align: center;
+    margin-top: 50px;
+}
+.search-btn{
+    background-color: #f98b09;
+    text-decoration: none;
+    color:black;
+    padding: 10px 50px;
+    border-radius: 5px;
+    font-family: var(--paragraph-font);
+    font-size:1.2em;
+    font-weight: bold;
+}
+.search-btn:hover{
+    background-color: #fd9f2d;
 }
 nav ul{
     display: flex;
@@ -82,15 +107,19 @@ nav ul li a:hover{
 main{
     width: 80%;
     margin: 0 auto;
-    border: 1px dashed black;
+    /*border: 1px solid black;*/
 }
 /*end main section*/
 
 /* Too Many Options to Eat*/
 #first{
-    border: 1px dashed red;
+    /*border: 1px dashed red;*/
     display: flex;
     justify-content: space-around;
+    background-color: #F9EDDC;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Crect stroke='%23F9EDDC' stroke-width='.5' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='3' height='3' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cuse fill='%23f6ebda' href='%23s' y='2'/%3E%3Cuse fill='%23f6ebda' href='%23s' x='1' y='2'/%3E%3Cuse fill='%23f4e8d8' href='%23s' x='2' y='2'/%3E%3Cuse fill='%23f4e8d8' href='%23s'/%3E%3Cuse fill='%23f1e6d5' href='%23s' x='2'/%3E%3Cuse fill='%23f1e6d5' href='%23s' x='1' y='1'/%3E%3C/pattern%3E%3Cpattern id='b' width='7' height='11' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23efe3d3'%3E%3Cuse href='%23s'/%3E%3Cuse href='%23s' y='5' /%3E%3Cuse href='%23s' x='1' y='10'/%3E%3Cuse href='%23s' x='2' y='1'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='8'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='5' y='2'/%3E%3Cuse href='%23s' x='5' y='6'/%3E%3Cuse href='%23s' x='6' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='h' width='5' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23efe3d3'%3E%3Cuse href='%23s' y='5'/%3E%3Cuse href='%23s' y='8'/%3E%3Cuse href='%23s' x='1' y='1'/%3E%3Cuse href='%23s' x='1' y='9'/%3E%3Cuse href='%23s' x='1' y='12'/%3E%3Cuse href='%23s' x='2'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='2'/%3E%3Cuse href='%23s' x='3' y='6'/%3E%3Cuse href='%23s' x='3' y='11'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='4' y='10'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='17' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23ece1d1'%3E%3Cuse href='%23s' y='11'/%3E%3Cuse href='%23s' x='2' y='9'/%3E%3Cuse href='%23s' x='5' y='12'/%3E%3Cuse href='%23s' x='9' y='4'/%3E%3Cuse href='%23s' x='12' y='1'/%3E%3Cuse href='%23s' x='16' y='6'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='19' height='17' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23F9EDDC'%3E%3Cuse href='%23s' y='9'/%3E%3Cuse href='%23s' x='16' y='5'/%3E%3Cuse href='%23s' x='14' y='2'/%3E%3Cuse href='%23s' x='11' y='11'/%3E%3Cuse href='%23s' x='6' y='14'/%3E%3C/g%3E%3Cg fill='%23eadece'%3E%3Cuse href='%23s' x='3' y='13'/%3E%3Cuse href='%23s' x='9' y='7'/%3E%3Cuse href='%23s' x='13' y='10'/%3E%3Cuse href='%23s' x='15' y='4'/%3E%3Cuse href='%23s' x='18' y='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='53' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23FFF6F9'%3E%3Cuse href='%23s' x='2' y='5'/%3E%3Cuse href='%23s' x='16' y='38'/%3E%3Cuse href='%23s' x='46' y='42'/%3E%3Cuse href='%23s' x='29' y='20'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='59' height='71' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23FFF6F9'%3E%3Cuse href='%23s' x='33' y='13'/%3E%3Cuse href='%23s' x='27' y='54'/%3E%3Cuse href='%23s' x='55' y='55'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='g' width='139' height='97' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23FFF6F9'%3E%3Cuse href='%23s' x='11' y='8'/%3E%3Cuse href='%23s' x='51' y='13'/%3E%3Cuse href='%23s' x='17' y='73'/%3E%3Cuse href='%23s' x='99' y='57'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23b)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23h)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23c)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23d)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23e)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23f)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23g)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
 }
 .first-detail{
     width: 60%;
@@ -100,6 +129,7 @@ main{
     margin-bottom: 25px;
     font-family: var(--heading-font);
     font-size: 1.8em;
+    color: #0e3d6b;
 }
 .first-detail p{
     line-height: 1.5em;
@@ -115,9 +145,10 @@ main{
 
 /* All Do you Need to Know*/
 .second{
-    border: 1px dashed rgb(241, 103, 11);
+    /*border: 1px dashed rgb(241, 103, 11);*/
     display: flex;
     flex-direction: column;
+    background-color: rgb(247, 247, 243);
 }
 .second h1{
     margin: 25px auto;
@@ -166,7 +197,10 @@ main{
 .third{
     display: flex;
     justify-content: space-around;
-    border: 1px dashed green;
+    /*border: 1px dashed green;*/
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' %3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%23ECF3FF'/%3E%3Cstop offset='1' stop-color='%23CDCEDB'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpattern id='b' width='24' height='24' patternUnits='userSpaceOnUse'%3E%3Ccircle fill='%23ffffff' cx='12' cy='12' r='12'/%3E%3C/pattern%3E%3Crect width='100%25' height='100%25' fill='url(%23a)'/%3E%3Crect width='100%25' height='100%25' fill='url(%23b)' fill-opacity='0.1'/%3E%3C/svg%3E");
+    background-attachment: fixed;
 }
 .image-third{
     display: block;
@@ -181,6 +215,7 @@ main{
     margin-bottom: 25px;
     font-family: var(--heading-font);
     font-size: 1.8em;
+    color: #0e3d6b;
 }
 .third-detail p{
     line-height: 1.5em;
@@ -221,7 +256,9 @@ form.search-form button{
 
 /* list food trucks */
 .list{
-    border: 1px dashed blue;
+    /*border: 1px dashed blue;*/
+    /*border-left: 1px solid black;
+    border-right: 1px solid black;*/
 }
 .list h1{
     margin: 50px 0;
@@ -300,6 +337,7 @@ form.search-form button{
 
 /*breadcrumb menu*/
 .breadcrumb{
+    display: inline-block;
     margin: 50px 0;
     text-align: center;
 }
