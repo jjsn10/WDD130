@@ -236,6 +236,7 @@ main{
 /* Search Form Trucks Food*/
 form.search-form{
     margin-top: 25px;
+    margin-bottom: 25px;
     text-align: center;
 }
 form.search-form input[type=text]{
