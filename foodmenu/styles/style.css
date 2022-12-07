@@ -124,7 +124,7 @@ main{
 .first-detail{
     width: 60%;
 }
-.first-detail h1{
+.first-detail h2{
     margin-top: 25px;
     margin-bottom: 25px;
     font-family: var(--heading-font);
@@ -150,7 +150,7 @@ main{
     flex-direction: column;
     background-color: rgb(247, 247, 243);
 }
-.second h1{
+.second h2{
     margin: 25px auto;
     font-family: var(--heading-font);
     font-size: 1.8em;
@@ -210,7 +210,7 @@ main{
     width: 60%;
     
 }
-.third-detail h1{
+.third-detail h2{
     margin-top: 25px;
     margin-bottom: 25px;
     font-family: var(--heading-font);
@@ -265,7 +265,7 @@ form.search-form button{
 .main-heading{
     text-align: center;
 }
-.list h1{
+.list h2{
     display: inline-block;
     margin: 50px 0;
     font-family: var(--heading-font);
